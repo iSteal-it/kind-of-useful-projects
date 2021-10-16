@@ -1,0 +1,52 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Mes{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='css/styles.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+{% endblock %}
+
+{% block content %}
+<div class="box">
+<a href="{{url_for('home')}}"><p class="na">MEs.</p></a>
+    <div class="main">
+        <div class="row">
+           <div class="col col-lg-6 col-md-6">
+               <h1 class="heading">For any enquiries, or to say hello, get in touch 👋</h1>
+           </div>
+            </div>
+        </div>
+    <div class="row">
+                         <div class="col col-lg-4 col-md-4">
+               <h2 class="heading">Contact Info:</h2>
+                       <p class="name">Email:bobbobpvp@gmail.com</p>
+                       <p class="name">Phone:+91 626-414-7206</p>
+           </div>
+                   <div class="col col-lg-8 col-md-8">
+   {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <h6>{{message}}</h6>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+                       <form method="post">
+                           {{ wtf.quick_form(form)}}
+                       </form>
+
+           </div>
+    </div>
+
+
+
+
+</div>
+
+{% endblock %}

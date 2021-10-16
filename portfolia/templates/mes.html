@@ -14,23 +14,49 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-<p class="na">MEs.</p>
+<div class="box">
+<a href="{{url_for('home')}}"><p class="na">MEs.</p></a>
 <div class="main">
 <div class="row">
-   <div class="col col-lg-6 col-sm-12">
+   <div class="col col-lg-6 col-sm-12 col-md-6">
        <p class="name">Karan Yadav</p>
-       <h1 class="heading">I'm a full stack developer and tech geek.</h1>
-       <a href="" class="button">let's talk</a>
+       <h1 class="heading">I'm a full stack developer</h1>
+       <h1 class="heading">and tech geek.</h1>
+       <a href="{{url_for('contact')}}" class="button">let's talk .</a>
    </div>
 
-    <div class="col col-lg-6 col-sm-12 d-flex justify-content-center text-center">
+    <div class="col col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center text-center">
         <img class="pfp" src="https://lh3.googleusercontent.com/a-/AOh14GgxJ7vsj0CtU1tVxJmZNvlaUEqZTsIhDAJ-ucH1rQ=s600-k-no-rp-mo" alt="Avatar">
     </div>
 </div>
 </div>
     <hr>
+<div class="row nav flex-nowrap">
+     <div class="col col-lg-6 col-sm-6 col-md-6 col-xs-6 d-flex justify-content-center text-center">
+      <a href="{{url_for('home')}}"><p class="nv x">mes</p></a>
+    </div>
+         <div class="col col-lg-6 col-sm-6 col-md-6 col-xs-6 d-flex justify-content-center text-center">
+      <p class="nv">mes projects</p>
+    </div>
+</div>
+    <hr>
+<div class="socials">
+    <div class="row flex-nowrap">
+     <div class="col col-lg-3 col-sm-3 col-md-3 col-xs-3 d-flex justify-content-center text-center">
+      <a href="https://www.youtube.com/c/i-S-t-e-a-lYT"><i class="fab fa-youtube"></i></a>
+    </div>
+         <div class="col col-lg-3 col-sm-3 col-md-3 col-xs-3 d-flex justify-content-center text-center">
+    <a href="https://twitter.com/itzisteal?lang=en"> <i class="fab fa-twitter"></i></a>
+    </div>
+            <div class="col col-lg-3 col-sm-3 col-md-3 col-xs-3 d-flex justify-content-center text-center">
+      <a href="https://github.com/iSteal-it"><i class="fab fa-github"></i></a>
+    </div>
+            <div class="col col-lg-3 col-sm-3 col-md-3 col-xs-3 d-flex justify-content-center text-center">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
 
+</div>
 </div>
 
 {% endblock %}

@@ -10,7 +10,13 @@ hr {
 border: 1px solid black;
 }
 
-.button {
+h6 {
+font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color:black;
+}
+
+.button,.btn {
   background-color: #000;
   border: none;
   color: white;
@@ -25,13 +31,18 @@ border: 1px solid black;
   font-weight: 300;
 }
 
+.btn:hover {
+
+background-color:gray;
+}
 .na{
  font-family: 'Inter', sans-serif;
  font-size: 24px;
   font-weight: 300;
+  color:black;
 }
 
-.container {
+.box {
 padding:3%;
 margin:2%;
 }
@@ -70,4 +81,39 @@ a:hover {
     color:white;
     text-decoration:none;
     cursor:pointer;
+}
+
+.nav {
+padding:0 8%;
+}
+.nv {
+ font-family: 'Inter', sans-serif;
+ font-size: 20px;
+  font-weight: 300;
+
+}
+
+.nv {
+color:black;
+}
+.nv:hover{
+text-decoration: line-through;
+color:gray;
+}
+.x {
+text-decoration: line-through;
+}
+
+.fab {
+color:black;
+font-size:24px;
+padding:3%;
+}
+.fab:hover{
+color:gray;
+}
+
+.na:hover{
+text-decoration: line-through;
+color:gray;
 }
