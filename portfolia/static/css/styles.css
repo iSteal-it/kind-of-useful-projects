@@ -16,7 +16,9 @@ font-family: 'Inter', sans-serif;
   color:black;
 }
 
+
 .button,.btn {
+
   background-color: #000;
   border: none;
   color: white;
@@ -31,10 +33,10 @@ font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
-.btn:hover {
-
+.btn:hover,.button:hover {
 background-color:gray;
 }
+
 .na{
  font-family: 'Inter', sans-serif;
  font-size: 24px;
@@ -116,4 +118,21 @@ color:gray;
 .na:hover{
 text-decoration: line-through;
 color:gray;
+}
+
+.i {
+display: flex;
+}
+.col-md-6 {
+flex-grow: 1;
+}
+@media (max-width:800px) {
+ .i {
+flex-direction: column-reverse;
+ text-align: center;
+		}
+
+.name {
+ padding-top:2%;
+ }
 }
