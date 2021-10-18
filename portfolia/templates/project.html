@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Projects{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='css/styles.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="box">
+<div class="main">
+    <hr>
+<div class="row nav flex-nowrap">
+     <div class="col col-lg-6 col-sm-6 col-md-6 col-xs-6 d-flex justify-content-center text-center">
+      <a href="{{url_for('home')}}"><p class="nv">mes</p></a>
+    </div>
+         <div class="col col-lg-6 col-sm-6 col-md-6 col-xs-6 d-flex justify-content-center text-center">
+      <a href="{{url_for('projects')}}"> <p class="nv x">mes projects</p></a>
+    </div>
+</div>
+<hr>
+</div>
+</div>
+
+{% endblock %}

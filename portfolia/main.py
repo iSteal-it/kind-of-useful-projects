@@ -47,6 +47,8 @@ def contact():
         return redirect('contact')
     return render_template("contact.html", form=form)
 
-
+@app.route("/projects")
+def projects():
+    return render_template("project.html")
 if __name__ == '__main__':
     app.run(debug=True)
