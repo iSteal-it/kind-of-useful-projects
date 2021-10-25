@@ -34,7 +34,7 @@ def contact():
         flash('Your response is submitted')
         msg_to_send = f"{name}\n\n {message}"
         my_email = "dd@isteal.me"
-        password = ""
+        password = "Krevory123@"
         connection = smtplib.SMTP("smtp.hostinger.com", 587)
         connection.starttls()
         connection.login(user=my_email, password=password)
@@ -47,8 +47,11 @@ def contact():
         return redirect('contact')
     return render_template("contact.html", form=form)
 
+
 @app.route("/projects")
 def projects():
     return render_template("project.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
